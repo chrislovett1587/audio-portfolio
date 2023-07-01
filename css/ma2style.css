@@ -1,0 +1,291 @@
+/* Imports normalize. */
+@import "normalize.css";
+
+/* Header 1 styling (used in header of page), does not need to be adjusted based on viewpoint. */
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+/* Paragraph styling for the header, does not need to be adjusted based on viewpoint. */
+p#head {
+    text-align: center;
+}
+
+/* Header 1 styling (used in body), does not need to be adjusted based on viewpoint. */
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    text-align: right !important;
+    padding: 5px;
+    color: white;
+}
+
+/* Paragraph styling, does not need to be adjusted based on viewpoint. */
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    padding: 5px;
+    color: white;
+}
+
+/* Styling for audio player. */
+audio {
+    border-radius: 10px;
+}
+
+/* General footer styling. */
+footer {
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 10px 10px 20px;
+    width: 70%;
+    margin: 0% auto 0%;
+}
+
+/* Included for footer paragraph text as otherwise it is overwritten above. */
+footer p{
+    text-align: center;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Footer unordered list styling for source links. */
+ul {
+    background-color: black;
+    overflow: auto;
+    width: 100%;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* List Item styling. Centers, sets max width within the unordered list, and displays. */
+li {
+    float: center;
+    width: 14%;
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Gets rid of underline for links within the list. */
+li a {
+    text-decoration: none;
+}
+
+/* Changes link text to black and gives it a white background when hovering. */
+li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Styling for viewpoint 600px and under. */
+@media screen and (max-width: 600px) {
+
+    /* Basic background styling. */
+    body {
+        background-image: url("../img/galaxybglong.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto; 
+        background-color: black;
+    }
+
+    /* Header of page. Displays in one column, collapsing the two sections together. */
+    .headGrid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        vertical-align: middle;
+        border-bottom: 5px solid white;
+        padding: 10px 0px 20px;
+        background-color: black;
+    }
+
+    /* Vertical alignment for header text. */
+    .headText {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    /* Body of page. Displays in one column, collapsing the two sections together. */
+    .bodyGrid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        background-color: rgba(68, 58, 89, 0.8);
+        padding: 20px;
+        margin: 20px 10px 20px;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        border-radius: 5%;
+    }
+
+    /* Music player positioning. */
+    .bodyMusic {
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    /* Makes image display, behave, and adjust to a stretching/contracting page. */
+    img {
+        display: block;
+        margin: auto;
+        width: 75%;
+        height: 100%;
+        border-radius: 10%;
+    }
+
+}
+
+/* Screen size between the two other options. */
+@media screen and (min-width: 600px) and (max-width: 950px) {
+
+    /* Basic background styling. */
+    body {
+        background-image: url("../img/galaxybglong.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto; 
+        background-color: black;
+    }
+    
+    /* Header of page. Displays in one column, collapsing the two sections together. */
+    .headGrid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        vertical-align: center;
+        border-bottom: 10px solid white;
+        padding: 10px 0px 30px;
+        background-color: black;
+    }
+
+    /* Vertical alignment for header text. */
+    .headText {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    /* Body of page. Displays in one column, collapsing the two sections together. */
+    .bodyGrid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        background-color: rgba(68, 58, 89, 0.8);
+        padding: 20px;
+        margin: 30px 20px 30px;
+        border-top: 5px solid white;
+        border-bottom: 5px solid white;
+        border-radius: 5%;
+    }
+
+    /* Music player positioning. */
+    .bodyMusic {
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    /* Makes image display and behave. */
+    img {
+        display: block;
+        margin: auto;
+        width: 75%;
+        height: 100%;
+        border-radius: 10%;
+    }
+
+}
+
+/* Styling for viewpoint 600px and over. */
+@media screen and (min-width: 950px) {
+
+    /* Basic background styling. */
+    body {
+        background-image: url("../img/galaxybglong.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto; 
+        background-color: black;
+    }
+    
+    /* Header of page. Displays in two columns. */
+    .headGrid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        vertical-align: center;
+        padding: 10px 0px 10px;
+        width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Vertical alignment for header text. */
+    .headText {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    /* Makes sure header picture is properly centered and has a border separating it from header text. */
+    .headPic {
+        border-left: 5px solid white;
+        padding: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    /* Body of page. Displays in two columns. Centers it with auto margins and spaces each section out by 50px. */
+    .bodyGrid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 130px 130px 130px;
+        grid-gap: 5px;
+        padding: 10px;
+        width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        background-color: rgba(68, 58, 89, 0.8);
+        border-left: 5px solid white;
+        border-right: 5px solid white;
+        border-radius: 5%;
+    }
+
+    /* The picture takes up column 1 and rows 1 through 4.
+    Since there is nothing on row four, it's left blank. 
+    however, the border reaches the same heigh of the picture. */
+    .bodyPic {
+        grid-column: 1/1;
+        grid-row: 1/4;
+        border-right: 2px solid white;
+        margin: auto auto auto;
+    }
+
+    /* Starts and ends in column two and row 1. */
+    .bodyMusic {
+        grid-column: 2/2;
+        grid-row: 1/1;
+        margin: auto auto 0px;
+    }
+
+    /* Starts and ends in column two and spans rows 2 and 3. */
+    .bodyText {
+        grid-column: 2/2;
+        grid-row: 2/3;
+        margin-left: 5px;
+    }
+
+    /* Makes image display and behave. */
+    img {
+        display: block;
+        padding: 0px 15px 0px;
+        border-radius: 10%;
+    }
+}
